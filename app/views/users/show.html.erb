@@ -1,15 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+<h1><%= @user.email %></h1>
+<%= form_for (current_user.notes.build()) do |f| %>
 
-<p>
-  <b>Password:</b>
-  <%= @user.password %>
-</p>
+ <div class="field">
+    <%= f.label :assigned %><br />
+    <%= f.text_field :assigned , :id => "datepicker" %>
+ </div>
 
+
+<div class="field">
+	<%= f.label :text %><br />
+	<%= f.text_area :text %>
+</div>
+
+<div class="actions">
+	<%= f.submit "Post" %>
+</div>
+<% end %>
+
+
+<div class = "all_notes">
+	<% @notes = @user.notes %>
+	
+	<hr></hr>
+	<% @notes.reverse.each do |note| %>
+	
+	<p><%= note.text %></p>
+	<p> <%= note.assigned %></p>
+</div>
+<% end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+

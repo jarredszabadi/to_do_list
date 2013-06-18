@@ -13,10 +13,10 @@
 		<% end %>
 	</div>
 	
-	<title>Auth</title>
-	<%= stylesheet_link_tag :all %>
+	<title>GYM</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= javascript_include_tag "application" %>
-	<%= csrf_meta_tag %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 	<% flash.each do |name, msg| %>

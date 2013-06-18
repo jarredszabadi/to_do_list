@@ -1,8 +1,12 @@
 TestApp::Application.routes.draw do
+  
+
+
   #get 'static_pages/home'
   root :to => 'static_pages#home'
-  resources :users
+  resources :notes
   resources :sessions, only: [:new, :create, :destroy]
+  resources :users, :has_many => :notes
 
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
