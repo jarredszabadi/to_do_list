@@ -4,12 +4,18 @@
 **this app is built upon smplNote from github.com/aaemman
 
 Modifications in this version:
+
+
 1) Modified signup and sessions controller
+
+
 2) Added a datepicker in the 'Assigned' text field
+
+
 3) Outputs the note with the assigned date
 
 
 visit the app @
-https://tranquil-eyrie-5967.herokuapp.com
+ https://tranquil-eyrie-5967.herokuapp.com
 
 *use a fake email to sign up
