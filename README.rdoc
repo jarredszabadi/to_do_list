@@ -1,7 +1,7 @@
 == Welcome to Rails
 
 
-**this app is built upon smplNote from github.com/aaemman
+**this app is built upon smplNote from https://github.com/aaemman/smplNote
 
 Modifications in this version:
 
