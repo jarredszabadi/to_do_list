@@ -16,6 +16,6 @@ Modifications in this version:
 
 
 visit the app @
- https://tranquil-eyrie-5967.herokuapp.com
+ http://tranquil-eyrie-5967.herokuapp.com
 
 *use a fake email to sign up
